@@ -7,12 +7,9 @@ export default function Home() {
  
   return (
 <div className={`flex ${isMobile ? "flex-col" : "flex-row"}`}>
-  {/* Sidebar */}
-  <div className={`h-screen ${isMobile ? "w-full fixed top-0 left-0 z-50" : "w-64 fixed left-0 top-0"}`}>
+  <div className={` ${isMobile ? "w-full fixed top-0 left-0 z-50" : "w-64 fixed left-0 top-0"}`}>
     <Nav isMobile={isMobile} setIsMobile={setIsMobile} />
   </div>
-
-  {/* Main Content */}
   <div className={`flex-1 p-6 bg-gray-100 min-h-screen ${isMobile ? "ml-0 mt-16" : "ml-64"}`}>
     <Dashboard />
   </div>

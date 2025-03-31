@@ -42,7 +42,6 @@ const authSlice = createSlice({
   },
 });
 
-// Selector to get the current user
 export const selectCurrentUser = (state: { auth: AuthState }) => state.auth.user;
 
 export const { setLoading, setError, setUser, clearAuth } = authSlice.actions;

@@ -1,16 +1,12 @@
 'use client'
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { signOut } from "firebase/auth";
-import { auth } from "@/app/firebase/config";
 import { useAppDispatch } from '@/redux/hooks';
-import { clearAuth } from '@/redux/slices/authSlice';
 import { useState } from 'react';
 import { Menu, X } from "lucide-react";
 
 const MobNav = ({ handleLogout, menuItems }) => {
   const pathname = usePathname();
-  const dispatch = useAppDispatch();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (

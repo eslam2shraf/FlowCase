@@ -26,14 +26,14 @@ export default function Dashboard() {
 
   useEffect(() => {
     dispatch(fetchEmployee()).then((result) => {
-        console.log("🚀 Employee Data from Redux:", result.payload);
+    
     });
 }, [dispatch]);
 
 
 useEffect(() => {
   dispatch(fetchCases()).then((result) => {
-      console.log("🚀 Cases Data from Redux:", result.payload);
+     
   });
 }, [dispatch]);
 
@@ -105,7 +105,7 @@ useEffect(() => {
 
 
   return (
-    <div className="w-full flex items-center justify-center rounded-2xl bg-gray-100 p-6">
+    <div className="w-full z-50 flex items-center justify-center rounded-2xl bg-gray-100 p-6">
 
   <div className="w-full h-full bg-white shadow-lg rounded-lg flex flex-col">
     
